@@ -1,0 +1,3 @@
+*.pyc
+*egg-info
+free4sale/free4sale.sqlite
