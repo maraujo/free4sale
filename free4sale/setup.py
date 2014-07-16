@@ -12,6 +12,10 @@ requires = [
     'pyramid',
     'pyramid_chameleon',
     'pyramid_debugtoolbar',
+    'pyramid_tm',
+    'SQLAlchemy',
+    'transaction',
+    'zope.sqlalchemy',
     'waitress',
     ]
 
@@ -28,15 +32,16 @@ setup(name='free4sale',
       author='',
       author_email='',
       url='',
-      keywords='web pyramid pylons',
+      keywords='web wsgi bfg pylons pyramid',
       packages=find_packages(),
       include_package_data=True,
       zip_safe=False,
+      test_suite='free4sale',
       install_requires=requires,
-      tests_require=requires,
-      test_suite="free4sale",
       entry_points="""\
       [paste.app_factory]
       main = free4sale:main
+      [console_scripts]
+      initialize_free4sale_db = free4sale.scripts.initializedb:main
       """,
       )

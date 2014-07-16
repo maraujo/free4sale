@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="${request.locale_name}">
+  <head metal:use-macro="master.macros['head']">
+    <link href="${request.static_url('free4sale:static/css/shop-homepage.css')}" rel="stylesheet" />
+</head>
+<body>
+    <nav metal:use-macro="master.macros['nav']">
+    </nav>
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+          <div class="panel panel-primary">
+            <div class="panel-heading">Simple Form: Horizontal Form</div>
+            <div class="panel-body">
+              <form accept-charset="UTF-8" action="http://simple-form-bootstrap.plataformatec.com.br/examples/create_horizontal" class="simple_form form-horizontal" enctype="multipart/form-data" id="new_user_horizontal" method="post" novalidate="novalidate"><div style="display:none"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="/rEhQ5yBoQ1z8VwZHW8bfPc014/NMntZqoKY89hUDEQ="></div>
+
+
+              <div class="form-group email required user_horizontal_email"><label class="email required col-sm-3 control-label" for="user_horizontal_email"><abbr title="required">*</abbr> Email</label><div class="col-sm-9"><input class="string email required form-control" id="user_horizontal_email" name="user_horizontal[email]" placeholder="Email" type="email"><p class="help-block">Lorem ipsum dolor sit amet</p></div></div>
+
+              <div class="form-group password required user_horizontal_password"><label class="password required col-sm-3 control-label" for="user_horizontal_password"><abbr title="required">*</abbr> Password</label><div class="col-sm-9"><input class="password required form-control" id="user_horizontal_password" name="user_horizontal[password]" placeholder="Password" type="password"><p class="help-block">Lorem ipsum dolor sit amet</p></div></div>
+
+              <div class="form-group file optional user_horizontal_file"><label class="file optional col-sm-3 control-label" for="user_horizontal_file">File</label><div class="col-sm-9"><input class="file optional" id="user_horizontal_file" name="user_horizontal[file]" type="file"><p class="help-block">Example block-level help text here.</p></div></div>
+
+              <div class="form-group boolean optional user_horizontal_active"><div class="col-sm-offset-3 col-sm-9"><div class="checkbox"><input name="user_horizontal[active]" type="hidden" value="0"><label class="boolean optional" for="user_horizontal_active"><input class="boolean optional" id="user_horizontal_active" name="user_horizontal[active]" type="checkbox" value="1">Active</label></div><p class="help-block">Lorem ipsum dolor sit amet</p></div></div>
+
+              <div class="form-group check_boxes optional user_horizontal_choices"><label class="check_boxes optional col-sm-3 control-label">Choices</label><div class="col-sm-9"><span class="checkbox"><label for="user_horizontal_choices_option_one_is_this_and_thatbe_sure_to_include_why_its_great" name="user_horizontal[choices]"><input class="check_boxes optional" id="user_horizontal_choices_option_one_is_this_and_thatbe_sure_to_include_why_its_great" name="user_horizontal[choices][]" type="checkbox" value="Option one is this and that—be sure to include why it's great">Option one is this and that—be sure to include why it's great</label></span><span class="checkbox"><label for="user_horizontal_choices_option_two_can_be_something_else_and_selecting_it_will_deselect_option_one" name="user_horizontal[choices]"><input class="check_boxes optional" id="user_horizontal_choices_option_two_can_be_something_else_and_selecting_it_will_deselect_option_one" name="user_horizontal[choices][]" type="checkbox" value="Option two can be something else and selecting it will deselect option one">Option two can be something else and selecting it will deselect option one</label></span><input name="user_horizontal[choices][]" type="hidden" value=""></div></div>
+
+              <div class="form-group radio_buttons optional user_horizontal_sex"><label class="radio_buttons optional col-sm-3 control-label">Sex</label><div class="col-sm-9"><span class="radio"><label for="user_horizontal_sex_male" name="user_horizontal[sex]"><input class="radio_buttons optional" id="user_horizontal_sex_male" name="user_horizontal[sex]" type="radio" value="Male">Male</label></span><span class="radio"><label for="user_horizontal_sex_female" name="user_horizontal[sex]"><input class="radio_buttons optional" id="user_horizontal_sex_female" name="user_horizontal[sex]" type="radio" value="Female">Female</label></span><p class="help-block">Lorem ipsum dolor sit amet</p></div></div>
+
+              <input class="btn btn-default" name="commit" type="submit" value="Create User">
+              </form>
+          </div>
+      </div>
+  </div>
+
+</div>
+</body>
+</html>
+
+
+
+
+
