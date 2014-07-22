@@ -50,6 +50,7 @@ class Product(Base):
         self.email = email
         self.oncampus = oncampus
         self.price = price
+        self.time = python_datetime.now()
 
 class Person(Base):
     __tablename__ = "person"
@@ -61,6 +62,7 @@ class Person(Base):
     phone = Column(Text,nullable=True)
     address = Column(Text,nullable=True)
     oncampus = Column(Text,nullable=True)
+    time = Column(DateTime,nullable=False)
     products = relationship(Product)
 
     def __init__(self,email = "",password = "",fname = "",lname = "",phone = "",address = "",oncampus = ""):
