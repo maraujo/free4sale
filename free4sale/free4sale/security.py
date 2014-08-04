@@ -1,0 +1,1 @@
+USERS = {'logged':'logged','anyone':'anyone'}

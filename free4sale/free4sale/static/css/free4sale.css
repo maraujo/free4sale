@@ -14,4 +14,102 @@
     background-color: #fff;
 }
 
+
+/*NAVBAR COLORS START*/
+
 #login-nav input { margin-bottom: 15px; }
+
+div#bs-example-navbar-collapse-1{
+  background: linear-gradient(to bottom,#0D261F,#1A483D);
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a{
+ background: linear-gradient(to bottom,#429980,#21886F); 
+ margin-left: 12px;
+ border-radius: 12px;
+ box-shadow: 12px 8px 8px rgba(64, 117, 87, 0.42);
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
+  font-color: #E7E7E7;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
+  color: #9AB79F;
+}
+
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a{
+  color: #E7E7E7;
+}
+
+.navbar-nav>li>a a.navbar-brand{
+ color: #E7E7E7; 
+}
+
+.navbar-default .navbar-brand {
+color: #FFF;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+color: #9AB79F;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+color: #E7E7E7;
+}
+
+.nav-logo{
+  max-height: 30px;
+}
+
+/*NAVBAR COLORS END*/
+/*CAROUSEL START*/
+.custom_carousel .item {
+
+    color:#000;
+    background-color:#eee;
+    padding:20px 0;
+}
+.custom_carousel .controls{
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding:0;
+    margin:0;
+    white-space: nowrap;
+    text-align: center;
+    position: relative;
+    background:#ddd
+}
+.custom_carousel .controls li {
+    display: table-cell;
+    width: 1%;
+    max-width:90px
+}
+.custom_carousel .controls li.active {
+    background-color:#eee;
+    border-top:3px solid #21886F;
+}
+.custom_carousel .controls a small {
+    overflow:hidden;
+    display:block;
+    font-size:10px;
+    margin-top:5px;
+    font-weight:bold
+}
+
+div#bs-example-navbar-collapse-2 {
+  background-color: rgb(117, 141, 117);
+}
+
+nav.navbar.navbar-default{
+  margin-bottom: 0px;
+  border-bottom-width: 0px;
+  border-color: rgb(117, 141, 117);
+}
+
+div.navbar-header {
+background: linear-gradient(to bottom,#0D261F,#1A483D);
+}
+
+.hide{
+  display:none;
+}

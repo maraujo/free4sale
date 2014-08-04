@@ -19,15 +19,19 @@ from sqlalchemy.orm import (
     )
 
 from zope.sqlalchemy import ZopeTransactionExtension
+from sqlalchemy_searchable import make_searchable
+from sqlalchemy_utils.types import TSVectorType
+
+
 
 DBSession = scoped_session(sessionmaker(extension=ZopeTransactionExtension()))
 Base = declarative_base()
-
+#make_searchable()
 
 class Product(Base):
     __tablename__ = "product"
     id = Column(Integer,primary_key=True)
-    owner = Column(Integer, ForeignKey('person.id'))
+    owner = Column(Integer, ForeignKey('user.id'))
     name = Column(Text,nullable=False)
     picture = Column(Text,nullable=False)
     description = Column(Text,nullable=False) 
@@ -38,6 +42,7 @@ class Product(Base):
     oncampus = Column(Text,nullable=False)
     price = Column(Text,nullable=False)
     time = Column(DateTime,nullable=False)
+    #search_vector = Column(TSVectorType('name'))
 
     def __init__(self,name = "",picture = "",description = "",category = "",\
                  condition = "",phone = "",email = "",oncampus = "",price = ""):
@@ -52,8 +57,8 @@ class Product(Base):
         self.price = price
         self.time = python_datetime.now()
 
-class Person(Base):
-    __tablename__ = "person"
+class User(Base):
+    __tablename__ = "user"
     id = Column(Integer,primary_key=True)
     email = Column(Text,nullable=True)
     password = Column(Text,nullable=True)

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="${request.locale_name}">
+  <head metal:use-macro="master.macros['head']">
+    <link href="${request.static_url('free4sale:static/css/shop-homepage.css')}" rel="stylesheet" />
+</head>
+<body>
+
+   <macro metal:use-macro="master.macros['nav-with-signin']">
+   </macro>
+   <div class="container">
+   
+    <div class="row">
+        <div><h2>Products in Search:</h2></div>
+    </div>
+     <div class="row">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tal:for repeat="product products" >
+                    <tr>
+                        <td>${product.id}</td>
+                        <td>${product.name}</td>
+                    </tr>
+                </tal:for>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
